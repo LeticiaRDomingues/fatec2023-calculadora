@@ -6,42 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
 </head>
-<!--Aqui começa a parte em CSS-->
-<!--Poderia escrever apenas <style></style> e também daria certo-->
-<style type="text/css"> 
-form {
-    background-color:cornsilk;
-    }
-</style>
-</head>
 
-<!--Aqui termina a parte em CSS-->
 <body>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
     <h1>Calculadora Básica</h1>
-    <!--Caso vc use form e tudo cuma, é pq forms são submetidos, a pag por padrão é recarregada e some, uma das soluções é tirar o form ou colocar isso no cod =  button type="button" -->
-        <!-- Para comentar-->
-    <form><input type="text" id="num1"><!--Não pode repetir id-->
-        +
+   
+    <form>
+        <input type="text" id="num1">
         <input type="text" id="num2">
-        <button type="button" onclick="somar()">Somar</button>
-        <input type="text" id="resp" readonly><!--readonly=Serve para imperdir que possam escrever por cima e apenas leiam-->
+        <button type="button" onclick="somar()">+</button>
+        <button type="button" onclick="subtrair()">-</button>
+        <button type="button" onclick="dividir()">÷</button>
+        <button type="button" onclick="multiplicar()">*</button>
+        <input type="text" id="resp" readonly>
+        <button type="reset" onclick="limpar()">C</button>
     </form>
         
-    <!--A partir daqui começa a parte de JS da página-->
-    <script>
-        function somar(){
-           // alert("click"); - exemplo de cod em JS
-           var num1, num2, resp; //Declaracao de variaveis -nao é necessario- mas é visualmente mais organizado
-          // num1 = document.getElementById("num1"); - até aqui, o codigo vai guardar o elemento/objeto, e não o valor digitado
-          num1 = parseFloat(document.getElementById("num1").value);//Agora pegou o valor digitado
-          num2 = parseFloat(document.getElementById("num2").value);
+    <script type="text/javascript" src="funcionamento.js"></script></script>
 
-          resp = num1 + num2;
-          
-          document.getElementById("resp").value = resp;
-
-         
-        }
-    </script>
 </body>
+
 </html>
