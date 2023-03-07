@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,18 +12,44 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <h1>Calculadora Básica</h1>
-   
-    <form>
-        <input type="text" id="num1">
-        <input type="text" id="num2">
-        <button type="button" onclick="somar()">+</button>
-        <button type="button" onclick="subtrair()">-</button>
-        <button type="button" onclick="dividir()">÷</button>
-        <button type="button" onclick="multiplicar()">*</button>
-        <input type="text" id="resp" readonly>
-        <button type="reset" onclick="limpar()">C</button>
-    </form>
-        
+
+    <div class="tela">
+
+    <input type="text" id = 'resposta'>
+
+                    <div>
+                        <input type="button" value = 'C' onclick = "limpar()" class="botoes">
+                        <input type="button" value = '%' onclick = "resolv('%')" class="botoes">
+                        <input type="button" value = '←' onclick ="volt('←')" class="botoes">
+                        <input type="button" value = '/' onclick = "resolv('/')" class="botoes">
+                        <br>
+                        <input type="button" value = '7' onclick = "resolv('7')" class="botoes">
+                        <input type="button" value = '8' onclick = "resolv('8')" class="botoes">
+                        <input type="button" value = '9' onclick = "resolv('9')" class="botoes">
+                        <input type="button" value = 'x' onclick = "resolv('*')" class="botoes">
+                        <br>
+                        <input type="button" value = '4' onclick = "resolv('4')" class="botoes">
+                        <input type="button" value = '5' onclick = "resolv('5')" class="botoes">
+                        <input type="button" value = '6' onclick = "resolv('6')" class="botoes">
+                        <input type="button" value = '-' onclick = "resolv('-')" class="botoes">
+                        <br>
+                        <input type="button" value = '1' onclick = "resolv('1')" class="botoes">
+                        <input type="button" value = '2' onclick = "resolv('2')" class="botoes">
+                        <input type="button" value = '3' onclick = "resolv('3')" class="botoes">
+                        <input type="button" value = '+' onclick = "resolv('+')" class="botoes">
+                        <br>
+                        <input type="button" value = '00'onclick = "resolv('00')" class="botoes">
+                        <input type="button" value = '0' onclick = "resolv('0')" class="botoes">
+                        <input type="button" value = '.' onclick = "resolv('.')" class="botoes">
+                        <input type="button" value = '=' onclick = "resolv('=')" class="botoes">
+                        
+                    </div>
+                </form>
+                
+            </tbody>
+        </table>
+</div>
+             
     <script type="text/javascript" src="funcionamento.js"></script></script>
 
 </body>

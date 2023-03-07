@@ -1,6 +1,60 @@
+body{
+    background-color: #495250;
+    display: grid;
+    height: 10cm;
+    place-items: center;
+    justify-content: center;
+    text-align:center;
+    display: flexbox;
+ }
+
+
+ .tela input[type='text'] {
+    width: 100%;
+    position: inherit;
+    height: 100px;
+    top: 3px;
+    text-align: right;
+    padding: 5px 8px;
+    outline: none;
+    font-size: 40px;
+    border: 5px solid black;
+    display: flex;
+    margin: auto;
+    border-radius: 6px;
+    color: black;
+ }
+
 h1{
-    font-size: 35px;
+    font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: lightblue;
+    Text-align: center;
+    height: 20px;
+    top: 20px;
+    margin-left: 20px;
+    margin-right: 50px;
+    display: flexbox;
 }
 
+.botoes{
+    width: 3em;
+    padding: 1%;
+    margin: 2px 0px;
+    left: 13px;
+    top: 20px;
+    box-sizing: inherit;
+    height: 3em;
+    font-size: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #495250;
+    border-radius: 10px;
+    color: white;
+}
+
+.botoes input:hover{
+    background-color: black;
+    color: white;
+ }
